@@ -4,9 +4,9 @@
 
 > javascript 一共有6种数据类型
 
-* number
-* string
-* boolean
-* undefined
-* null
-* object
+* number (数值)
+* string (字符串)
+* boolean (布尔值)
+* undefined (未定义)
+* null (空)
+* object (对象)
