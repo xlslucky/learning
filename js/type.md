@@ -23,3 +23,28 @@ typeof 123 // "number"
 typeof '123' // "string"
 typeof false // boolean
 ```
+
+2.函数
+
+```js
+// 函数返回function
+function f () {}
+typeof f // "function"
+```
+
+3.undefined
+
+```js
+// undefined 返回 undefined
+typeof a // “undefined”
+```
+
+4.其他
+
+```js
+// 除此之外 其他都返回 object
+typeof window // "object"
+typeof [] // "object"
+typeof {} // "object"
+typeof null // "object"
+```
