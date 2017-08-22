@@ -1,4 +1,4 @@
-## 数据类型 (阮一峰 数据类型)[http://javascript.ruanyifeng.com/grammar/types.html]
+## 数据类型 [阮一峰 数据类型](http://javascript.ruanyifeng.com/grammar/types.html)
 
 ### 数据类型
 
