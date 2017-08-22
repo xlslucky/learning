@@ -1,4 +1,6 @@
-## 数据类型 [阮一峰 数据类型](http://javascript.ruanyifeng.com/grammar/types.html)
+## 数据类型
+
+### 参考 [阮一峰 数据类型](http://javascript.ruanyifeng.com/grammar/types.html)
 
 ### 数据类型
 
@@ -9,4 +11,4 @@
 * boolean (布尔值)
 * undefined (未定义)
 * null (空)
-* object (对象)
+* object (对象包括 object、array、function)
