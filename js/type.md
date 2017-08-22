@@ -48,3 +48,11 @@ typeof [] // "object"
 typeof {} // "object"
 typeof null // "object"
 ```
+
+```js
+// 区分array和object
+var obj = {};
+var arr = [];
+obj instanceof Array // false
+arr instanceof Array // true
+```
