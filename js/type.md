@@ -14,6 +14,7 @@
 * object (对象包括 object、array、function)
 
 ### typeof运算符
+> 对于值类型，你可以通过typeof判断，string/number/boolean都很清楚，但是typeof在判断到引用类型的时候，返回值只有object/function，你不知道它到底是一个object对象，还是数组，还是new Number等等。
 
 1.原始类型
 
