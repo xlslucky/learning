@@ -22,7 +22,7 @@
 // 数值、字符串、布尔值 返回 number、string、boolean
 typeof 123 // "number"
 typeof '123' // "string"
-typeof false // boolean
+typeof false // "boolean"
 ```
 
 2.函数
