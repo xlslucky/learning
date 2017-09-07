@@ -38,4 +38,7 @@ typeof child.prototype // undefine
 typeof Parent.prototype // object
 
 child.__proto__ == Parent.prototype // true
+
+// Parent.prototype 包涵两个属性，一个是constructor，另一个是__proto__
+// constructor就是构造函数Parent
 ```
