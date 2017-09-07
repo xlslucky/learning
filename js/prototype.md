@@ -24,7 +24,8 @@ console.log(typeof null) // object
 ```
 
 ```js
-// 我们在定义函数的时候，函数定义的时候函数本身就会默认有一个prototype的属性，而我们如果用new 运算符来生成一个对象的时候就没有prototype属性，但是这个对象有__proto__属性，指向实例的prototype
+// 我们在定义函数的时候，函数定义的时候函数本身就会默认有一个prototype的属性
+// 而我们如果用new 运算符来生成一个对象的时候就没有prototype属性，但是这个对象有__proto__属性，指向实例的prototype
 function Parent(name){
   this.name = name;
 }
