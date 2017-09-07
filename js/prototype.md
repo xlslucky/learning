@@ -4,9 +4,8 @@
 
 1.typeof 输出的几种类型
 
-基本数据类型`undefined` & 复杂数据类型
+基本数据类型`undefined` `string` & 复杂数据类型
 
-* string
 * number
 * boolean
 * null
