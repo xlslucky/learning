@@ -3,8 +3,9 @@
 ### 参考 [（深入理解javascript原型和闭包）](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)  [（深入分析js中的constructor 和prototype）](http://www.cnblogs.com/yupeng/archive/2012/04/06/2435386.html)
 
 1.typeof 输出的几种类型
-> 基本数据类型`1` & 复杂数据类型
-* undefined
+
+基本数据类型`undefined` & 复杂数据类型
+
 * string
 * number
 * boolean
