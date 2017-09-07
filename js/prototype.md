@@ -4,7 +4,9 @@
 
 1.typeof 输出的几种类型
 
-基本数据类型`undefined`、 `string`、 `number`、 `boolean`、 `null` & 复杂数据类型 `object`
+基本数据类型 `undefined`、 `string`、 `number`、 `boolean`、 `null` & 复杂数据类型 `object`
+
+基本类型 `undefined`、 `string`、 `number`、 `boolean`、 `null` & 引用类型 `object`、 `array`、 `function`、 `regexp` ...
 
 ```js
 // 基本类型
