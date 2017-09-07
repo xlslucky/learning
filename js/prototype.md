@@ -1,6 +1,6 @@
 ## 原型
 
-### 参考 [深入理解javascript原型和闭包](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)
+### 参考 [深入理解javascript原型和闭包](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)  [深入分析js中的constructor 和prototype](http://www.cnblogs.com/yupeng/archive/2012/04/06/2435386.html)
 
 1.typeof 输出的几种类型
 
@@ -24,16 +24,17 @@ console.log(typeof null) // object
 ```
 
 ```js
-// 我们在定义函数的时候，函数定义的时候函数本身就会默认有一个prototype的属性，而我们如果用new 运算符来生成一个对象的时候就没有prototype属性，但是这个对于有__proto__属性，指向实例的prototype
-function a(c){
-    this.b = c;
-    this.d =function(){
-        alert(this.b);
-    }
+// 我们在定义函数的时候，函数定义的时候函数本身就会默认有一个prototype的属性，而我们如果用new 运算符来生成一个对象的时候就没有prototype属性，但是这个对象有__proto__属性，指向实例的prototype
+function Parent(name){
+  this.name = name;
 }
-var obj = new a('test');
-typeof obj.prototype // undefine
-typeof a.prototype // object
+Parent.prototype.do = function (){
+  console.log(this.name + ' can do everthing')
+}
+var child = new Parent('xuls');
 
-obj.__proto__ == a.prototype // true
+typeof child.prototype // undefine
+typeof Parent.prototype // object
+
+child.__proto__ == Parent.prototype // true
 ```
