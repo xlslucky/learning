@@ -2,7 +2,11 @@
 
 ### 参考 [（深入理解javascript原型和闭包）](http://www.cnblogs.com/wangfupeng1988/p/3977924.html)  [（深入分析js中的constructor 和prototype）](http://www.cnblogs.com/yupeng/archive/2012/04/06/2435386.html)
 
-1.typeof 输出的几种类型
+1. 一切都是对象 (值类型就不是对象)
+
+> 对象——若干属性的集合。
+
+typeof 输出的几种类型
 
 基本数据类型 `undefined`、 `string`、 `number`、 `boolean`、 `null` & 复杂数据类型 `object`
 
@@ -25,7 +29,26 @@ console.log(typeof null) // object
 2.函数和对象的关系
 
 ```js
+  // 函数就是对象的一种 
+  var fn = function () { };
+  fn instanceof Object // true
+  typeof fn // function
+
+  // 对象可以通过函数来创建
+  function Fn() {
+    this.name = '小呀嘛小二郎';
+    this.sex = 'boy';
+  }
+  var fn1 = new Fn();
+  fn1.name // '小呀嘛小二郎'
+  fn1.sex // 'boy'
+
+  // 这是创建对象、数组的 语法糖
+  var obj = {name: '小呀嘛小二郎'}
+  var arr = [1, 2, 3]
 ```
+
+3. prototype 原型
 
 ```js
 // 我们在定义函数的时候，函数定义的时候函数本身就会默认有一个prototype的属性
