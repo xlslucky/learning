@@ -86,3 +86,7 @@ child.__proto__ == Parent.prototype // true
 // Parent.prototype 包涵两个属性，一个是constructor，另一个是__proto__
 // constructor就是构造函数Parent
 ```
+
+5. instanceof
+
+> typeof 判断简单类型都很清除(string、boolean、number、undefined)，但是引用类型返回值只有(object、function)，不知道他是数组还是对象
