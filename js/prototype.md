@@ -52,6 +52,7 @@ console.log(typeof null) // object
 
 > 每个函数都有一个prototype, 每个对象都有一个__proto__
 
+1) 每个对象都是new Object()创建出来的，`o1、o2`的`__proto__`指向`创建他们的Object`的`prototype`属性
 ![object_prototype_1](https://github.com/xlslucky/learning/blob/master/images/object_prototype_1.png)
 
 ```javascript
