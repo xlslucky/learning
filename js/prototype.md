@@ -52,11 +52,12 @@ console.log(typeof null) // object
 
 > 每个函数都有一个prototype, 每个对象都有一个__proto__
 
-* 每个对象都是new Object()创建出来的，`o1、o2`的`__proto__`指向`创建他们的object`的`prototype`属性。
+* 每个对象都是new Object()创建出来的，`o1、o2`的`__proto__`指向`创建他们的Object`的`prototype`属性。
 * `Object`的`prototype`有`constructor`属性，指向`function Object(){}`这个构造函数。
-* `function Object(){}`的`prototype`就是`object.prototype`。
+* `function Object(){}`的`prototype`就是`Object.prototype`。
 ![object_prototype_1](https://github.com/xlslucky/learning/blob/master/images/object_prototype_1.png)
 
+* Object.prototype确实一个特例——它的__proto__指向的是null，切记切记！
 ![object_prototype_2](https://github.com/xlslucky/learning/blob/master/images/object_prototype_2.png)
 
 ![object_prototype_3](https://github.com/xlslucky/learning/blob/master/images/object_prototype_3.png)
