@@ -52,7 +52,6 @@ console.log(typeof null) // object
 
 > 每个函数都有一个prototype, 每个对象都有一个__proto__
 
-1）
 * 每个对象都是new Object()创建出来的，`o1、o2`的`__proto__`指向`创建他们的object`的`prototype`属性。
 * `Object`的`prototype`有`constructor`属性，指向`function Object(){}`这个构造函数。
 * `function Object(){}`的`prototype`就是`object.prototype`。
