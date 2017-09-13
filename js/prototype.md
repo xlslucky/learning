@@ -56,8 +56,11 @@ console.log(typeof null) // object
 * `Object`的`prototype`有`constructor`属性，指向`function Object(){}`这个构造函数。
 * `function Object(){}`的`prototype`就是`object.prototype`。
 ![object_prototype_1](https://github.com/xlslucky/learning/blob/master/images/object_prototype_1.png)
+
 ![object_prototype_2](https://github.com/xlslucky/learning/blob/master/images/object_prototype_2.png)
+
 ![object_prototype_3](https://github.com/xlslucky/learning/blob/master/images/object_prototype_3.png)
+
 ![object_prototype_4](https://github.com/xlslucky/learning/blob/master/images/object_prototype_4.png)
 
 ```javascript
