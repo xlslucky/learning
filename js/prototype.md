@@ -90,3 +90,13 @@ child.__proto__ == Parent.prototype // true
 5. instanceof
 
 > typeof 判断简单类型都很清除(string、boolean、number、undefined)，但是引用类型返回值只有(object、function)，不知道他是数组还是对象
+
+![object_prototype_5](https://github.com/xlslucky/learning/blob/master/images/object_prototype_5.png)
+
+```js
+// 沿着f1的__proto__、Foo的prototype来找，如果两条线能找到同一引用，那就返回true
+function Foo(){}
+var f1 = new Foo();
+f1 instanceof Foo // true
+f1 instanceof Object // true
+```
