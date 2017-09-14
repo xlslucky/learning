@@ -91,8 +91,6 @@ child.__proto__ == Parent.prototype // true
 
 > typeof 判断简单类型都很清除(string、boolean、number、undefined)，但是引用类型返回值只有(object、function)，不知道他是数组还是对象
 
-![object_prototype_5](https://github.com/xlslucky/learning/blob/master/images/object_prototype_5.png)
-
 ```js
 // 沿着f1的__proto__、Foo的prototype来找，如果两条线能找到同一引用，那就返回true
 function Foo(){}
@@ -100,3 +98,28 @@ var f1 = new Foo();
 f1 instanceof Foo // true
 f1 instanceof Object // true
 ```
+
+![object_prototype_5](https://github.com/xlslucky/learning/blob/master/images/object_prototype_5.png)
+
+6. 继承
+
+> javascript是通过原型链来实现继承
+> 所有对象的原型链都会找到Object.prototype，因此所有的对象都会有Object.prototype的方法。这就是继承；
+
+```js
+function Foo(){}
+var f1 = new Foo();
+f1.a = 10;
+Foo.prototype.a = 100;
+Foo.prototype.b = 200;
+// 访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链。
+f1.a // 10
+f1.b // 200
+
+// 验证是否是基本属性
+// hasOwnProperty 这个方法在 Object.prototype里 
+f1.hasOwnProperty('a') // true
+f1.hasOwnProperty('b') // false
+```
+
+每个函数都有call、apply方法，都有length、caller等属性，函数由Function函数创建，继承了Function.prototype的方法。
