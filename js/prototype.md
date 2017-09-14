@@ -124,3 +124,26 @@ f1.hasOwnProperty('b') // false
 ```
 
 每个函数都有call、apply方法，都有length、caller等属性，函数由Function函数创建，继承了Function.prototype的方法。
+
+8. 执行上下文
+
+准备工作
+* 变量、函数表达式 ---- 变量声明，默认赋值undefined
+* this ---- 赋值
+* 函数声明 ---- 赋值
+
+```js
+console.log(a) // Uncaught ReferenceError: a is not defined
+....
+console.log(a) // undefined
+var a;
+....
+console.log(a) // undefined
+var a = 10;
+....
+console.log(f1) // undefined
+var f1 = function(){} // 函数表达式
+....
+console.log(f2) // function f2(){}
+function f2(){} // 函数声明
+```
