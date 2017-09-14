@@ -104,6 +104,7 @@ f1 instanceof Object // true
 6. 继承
 
 > javascript是通过原型链来实现继承
+
 > 所有对象的原型链都会找到Object.prototype，因此所有的对象都会有Object.prototype的方法。这就是继承；
 
 ```js
