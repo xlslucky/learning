@@ -195,3 +195,18 @@ var fn1 = obj.fn;
 fn1()
 // 如果函数被赋值到另一个变量中，并没有作为obj的属性被调用，那么this指向window
 ```
+
+this -- 函数用call或者apply调用
+
+```js
+var obj = {
+  x: 10
+}
+function Foo () {
+  console.log(this)
+}
+
+Foo()     // Window { .... }
+
+Foo.call(obj)  // obj { x: 10 }
+```
