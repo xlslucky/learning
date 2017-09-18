@@ -125,7 +125,7 @@ f1.hasOwnProperty('b') // false
 
 每个函数都有call、apply方法，都有length、caller等属性，函数由Function函数创建，继承了Function.prototype的方法。
 
-8. 执行上下文
+8. 执行上下文、this
 
 准备工作
 * 变量、函数表达式 ---- 变量声明，默认赋值undefined
@@ -146,4 +146,52 @@ var f1 = function(){} // 函数表达式
 ....
 console.log(f2) // function f2(){}
 function f2(){} // 函数声明
+```
+
+this -- 构造函数
+
+```js
+function Foo () {
+  this.name = '胥';
+  this.age = '22';
+
+  console.log(this)        // Foo { name: '胥', age: '22'}
+}
+var f1 = new Foo()
+
+....
+
+function Foo () {
+  this.name = '胥';
+  this.age = '22';
+
+  console.log(this)        // Window { .... }
+}
+Foo();
+```
+
+this -- 函数作为对象的一个属性
+
+```js
+// 如果函数作为对象的一个属性时，并作为对象的属性被调用，函数的this指向obj
+var obj = {
+  x: 10,
+  fn: function (){
+    console.log(this)      // obj { x: 10, fn: function(){....} }
+    console.log(this.x)    // 10
+  }
+}
+obj.fn()
+
+// 当函数不作为对象的属性被调用
+var obj = {
+  x: 10,
+  fn: function (){
+    console.log(this)      // Window { .... }
+    console.log(this.x)    // undefined
+  }
+}
+var fn1 = obj.fn;
+fn1()
+// 如果函数被赋值到另一个变量中，并没有作为obj的属性被调用，那么this指向window
 ```
