@@ -26,7 +26,7 @@ console.log(typeof {name: 'xlslucky'}) // object
 console.log(typeof null) // object
 ```
 
-2.函数和对象的关系
+### 2.函数和对象的关系
 
 ```js
   // 函数就是对象的一种 
@@ -48,7 +48,7 @@ console.log(typeof null) // object
   var arr = [1, 2, 3]
 ```
 
-3. prototype 原型
+### 3. prototype 原型
 
 > 每个函数都有一个prototype, 每个对象都有一个__proto__
 
@@ -87,7 +87,7 @@ child.__proto__ == Parent.prototype // true
 // constructor就是构造函数Parent
 ```
 
-5. instanceof
+### 5. instanceof
 
 > typeof 判断简单类型都很清除(string、boolean、number、undefined)，但是引用类型返回值只有(object、function)，不知道他是数组还是对象
 
@@ -101,7 +101,7 @@ f1 instanceof Object // true
 
 ![object_prototype_5](https://github.com/xlslucky/learning/blob/master/images/object_prototype_5.png)
 
-6. 继承
+### 6. 继承
 
 > javascript是通过原型链来实现继承
 
@@ -125,7 +125,7 @@ f1.hasOwnProperty('b') // false
 
 每个函数都有call、apply方法，都有length、caller等属性，函数由Function函数创建，继承了Function.prototype的方法。
 
-8. 执行上下文、this
+### 8. 执行上下文、this
 
 准备工作
 * 变量、函数表达式 ---- 变量声明，默认赋值undefined
