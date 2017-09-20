@@ -218,3 +218,26 @@ Foo.call(obj)  // obj { x: 10 }
 ```
 
 #### 8.4 this -- 全局 & 调用普通函数
+
+```js
+// 普通函数在调用时，其中的this也都是window。
+var x = 10;
+var fn = function () {
+  console.log(this)      // Window { .... }
+  console.log(this.x)    // 10
+}
+fn()
+
+// 虽然函数f是在obj.fn内部定义， 但他仍然是普通函数，this指向window
+var obj = {
+  x: 10,
+  fn: function () {
+    function f () {
+      console.log(this)       // Window { .... }
+      console.log(this.x)     // undedined
+    }
+    f()
+  }
+}
+obj.fn()
+```
