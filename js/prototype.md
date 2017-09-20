@@ -216,3 +216,5 @@ Foo()     // Window { .... }
 
 Foo.call(obj)  // obj { x: 10 }
 ```
+
+#### 8.4 this -- 全局 & 调用普通函数
