@@ -127,6 +127,12 @@ f1.hasOwnProperty('b') // false
 
 ### 8. 执行上下文、this
 
+> this 永远指向最后调用它的那个对象
+
+> this 永远指向最后调用它的那个对象
+
+> this 永远指向最后调用它的那个对象
+
 准备工作
 * 变量、函数表达式 ---- 变量声明，默认赋值undefined
 * this ---- 赋值
@@ -148,7 +154,7 @@ console.log(f2) // function f2(){}
 function f2(){} // 函数声明
 ```
 
-this -- 构造函数
+#### 8.1 this -- 构造函数
 
 ```js
 function Foo () {
@@ -170,7 +176,7 @@ function Foo () {
 Foo();
 ```
 
-this -- 函数作为对象的一个属性
+#### 8.2 this -- 函数作为对象的一个属性
 
 ```js
 // 如果函数作为对象的一个属性时，并作为对象的属性被调用，函数的this指向obj
@@ -196,7 +202,7 @@ fn1()
 // 如果函数被赋值到另一个变量中，并没有作为obj的属性被调用，那么this指向window
 ```
 
-this -- 函数用call或者apply调用
+#### 8.3 this -- 函数用call或者apply调用
 
 ```js
 var obj = {
