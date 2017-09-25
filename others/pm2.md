@@ -1,4 +1,4 @@
-## pm2使用 [pm2实用入门指南](http://imweb.io/topic/57c8cbb27f226f687b365636)
+## pm2使用 [pm2实用入门指南](http://imweb.io/topic/57c8cbb27f226f687b365636) [pm2中文文档](http://www.cnblogs.com/zhentaoo/p/6421977.html)
 
 ### 安装
 
@@ -25,6 +25,10 @@ $ pm2 start all
 $ pm2 restart ./bin/www
 $ pm2 restart all
 
+# 重载、重载所有
+$ pm2 reload ./bin/www
+$ pm2 reload all
+
 # 停止、停止所有
 $ pm2 stop ./bin/www
 $ pm2 stop all
@@ -35,6 +39,13 @@ $ pm2 delete all
 
 # 查看进程状态
 $ pm2 list
+
+# 监控
+$ pm2 monit
+
+# 日志操作
+$ pm2 logs
+$ pm2 flush
 ```
 
 ### 配置文件
