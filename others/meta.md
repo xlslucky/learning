@@ -55,7 +55,7 @@
 ```
 
 #### 5.2.iOS图标
-```js
+```html
 // rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。
 // iPhone 和 iTouch，默认 57×57 像素，必须有
 <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png" />
