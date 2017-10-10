@@ -56,15 +56,15 @@
 
 #### 5.2.iOS图标
 ```html
-// rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。
-// iPhone 和 iTouch，默认 57×57 像素，必须有
+<!-- rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。 -->
+<!-- iPhone 和 iTouch，默认 57×57 像素，必须有 -->
 <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png" />
-// iPad，72×72 像素，可以没有，但推荐有
+<!-- iPad，72×72 像素，可以没有，但推荐有 -->
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png" />
-// Retina iPhone 和 Retina iTouch，114×114 像素，可以没有，但推荐有
+<!-- Retina iPhone 和 Retina iTouch，114×114 像素，可以没有，但推荐有 -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png" />
-// Retina iPad，144×144 像素，可以没有，但推荐有
+<!-- Retina iPad，144×144 像素，可以没有，但推荐有 -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png" />
-// IOS 图标大小在iPhone 6 plus上是180×180，iPhone 6 是120×120。 适配iPhone 6 plus，则需要在中加上这段
+<!-- IOS 图标大小在iPhone 6 plus上是180×180，iPhone 6 是120×120。 适配iPhone 6 plus，则需要在中加上这段 -->
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="retinahd_icon.png" />
 ```
