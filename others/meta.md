@@ -1,7 +1,7 @@
 ## meta实用标签 [移动前端不得不了解的html5 head 头标签](http://www.css88.com/archives/5480/comment-page-1)
 
 
-### 浏览器渲染
+### 1.浏览器渲染
 ```js
 // 优先使用 IE 最新版本和 Chrome
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -9,13 +9,13 @@
 <meta name="renderer" content="webkit" />
 ```
 
-### 转码
+### 2.转码
 ```js
 // 百度禁止转码
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 ```
 
-### SEO
+### 3.SEO
 ```js
 // 页面关键词 keywords
 <meta name="keywords" content="your keywords" />
@@ -27,7 +27,7 @@
 <meta name="robots" content="index,follow">
 ```
 
-### viewport
+### 4.viewport
 > viewport 可以让布局在移动浏览器上显示的更好
 
 > width=device-width 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边
@@ -39,9 +39,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-### iOS
+### 5.iOS
 
-#### iOS设备
+#### 5.1.iOS设备
 ```js
 // 添加到主屏后的标题
 <meta name="apple-mobile-web-app-title" content="标题" />
@@ -54,7 +54,7 @@
 <meta name="format-detection" content="telephone=no" />
 ```
 
-#### iOS图标
+#### 5.2.iOS图标
 ```js
 // rel 参数： apple-touch-icon 图片自动处理成圆角和高光等效果。 apple-touch-icon-precomposed 禁止系统自动添加效果，直接显示设计原图。
 // iPhone 和 iTouch，默认 57×57 像素，必须有
