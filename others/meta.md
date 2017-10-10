@@ -32,13 +32,7 @@
 
 > width=device-width 会导致 iPhone 5 添加到主屏后以 WebApp 全屏模式打开页面时出现黑边
 ```js
-// content 参数：
-// width viewport 宽度(数值/device-width)
-// height viewport 高度(数值/device-height)
-// initial-scale 初始缩放比例
-// maximum-scale 最大缩放比例
-//minimum-scale 最小缩放比例
-// user-scalable 是否允许用户缩放(yes/no)
+// content 参数：width viewport 宽度(数值/device-width); height viewport 高度(数值/device-height); initial-scale 初始缩放比例; maximum-scale 最大缩放比例; minimum-scale 最小缩放比例; user-scalable 是否允许用户缩放(yes/no)
 // 移动端
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 // pc
